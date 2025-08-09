@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pelis según el clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>🎬 Pelis según el clima</h1>
+      <p class="subtitle">Recomendaciones curiosas y diferentes — abre el archivo en tu navegador</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="controls">
+      <input id="city" placeholder="Escribe la ciudad (ej: Medellín, London, Tokyo)" />
+      <button id="btn">Buscar</button>
+    </section>
+
+    <section class="apikey">
+      <label>OpenWeatherMap API key (opcional):</label>
+      <input id="apiKey" placeholder="Pega aquí tu API key" />
+      <p class="note">Si dejas la clave vacía se muestran recomendaciones de ejemplo.</p>
+    </section>
+
+    <div id="resultHeader" class="result-header"></div>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Hecho con ❤️ — Datos: OpenWeatherMap (si pones la clave) y selección curada de películas.</div>
+      <div class="small">Abre el archivo localmente: no necesitas servidor.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
